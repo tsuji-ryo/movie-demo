@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'devise'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
