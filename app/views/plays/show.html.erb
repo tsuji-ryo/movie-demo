@@ -5,25 +5,38 @@
 
   <div class="col-md-8">
     <div class="play-info">
+     <p>
+        <%= link_to play_bookmarks_toggle_path(@play) , id: 'bookmark-link', remote: true do %>
+            <!--変更-->
+            <%=raw bookmark_icon(@play, current_user) %>
+        <% end %>
+      </p>
+
       <h2 class="playy-title"><%= @play.title %></h2>
-      <h3 class="play-director"><span>From </span><%= @play.director %></h3>
+      <h3 class="play-director"><span>監督:  </span><%= @play.director %></h3>
       <h4 class="play-director"><%= @play.category.name %></h4>
-      <h4 class="avg-rating">Average Rating</h4>
+      <h4 class="avg-rating">平均レビュー</h4>
       <div class="average-review-rating" data-score=<%= @average_review %>></div>
-      <span class="number-of-reviews"><em>From: </em><%= @play.reviews.count %> reviews </span>
+      <span class="number-of-reviews"><em> 合計 </em><%= @play.reviews.count %> レビュー </span>
       <p class="play-descs"><%= @play.description %></p>
     </div>
   </div>
+
+  <div>
+
+    
+
+      </div>
 
 </div>
 
 <div class="row">
   <div class="col-md-12">
     <div class="reviews">
-      <h1> Reviews</h1>
+      <h1> レビュー </h1>
         <%= render @play.reviews %>
         <div>
-          <%= link_to "Add Reviews", new_play_review_path(@play), class: "btn-custom" %>
+          <%= link_to "レビューを登録する", new_play_review_path(@play), class: "btn-custom" %>
         </div>
     </div>
   </div>
@@ -32,8 +45,8 @@
 <div class="links btn-group">
   <% if user_signed_in? %>
     <% if @play.user_id == current_user.id %>
-      <%= link_to "Edit", edit_play_path(@play), class: "btn btn-custom" %>
-      <%= link_to "Delete", play_path(@play), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-custom" %>
+      <%= link_to "映画編集", edit_play_path(@play), class: "btn btn-custom" %>
+      <%= link_to "映画削除", play_path(@play), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-custom" %>
     <% end -%>
   <% end -%>
 </div>

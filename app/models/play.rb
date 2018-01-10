@@ -1,5 +1,7 @@
 class Play < ActiveRecord::Base
-  belongs_to :user
+  has_many :clips
+  has_many :bookmarks
+  has_many :users, through: :clips
   belongs_to :category
   has_many :reviews
 
