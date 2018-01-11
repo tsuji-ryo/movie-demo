@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-  has_many :clips, dependent: :destroy
   has_many :bookmarks
   has_many :plays
   has_many :reviews

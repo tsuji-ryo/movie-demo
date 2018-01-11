@@ -1,5 +1,4 @@
 class Play < ActiveRecord::Base
-  has_many :clips
   has_many :bookmarks
   has_many :users, through: :clips
   belongs_to :category

@@ -15,6 +15,8 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise'
 gem 'paperclip', '~> 4.3', '>= 4.3.2'
 gem "font-awesome-rails"
+gem 'jquery-turbolinks'
+gem 'rails_12factor', group: :production
 
 
 group :development, :test do

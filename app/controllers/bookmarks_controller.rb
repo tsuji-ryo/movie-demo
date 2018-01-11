@@ -7,6 +7,6 @@ class BookmarksController < ApplicationController
     else
       user_bookmarks.create(user: current_user, play: Play.find(play_id))
     end
-    render :nothing => true
+    redirect_to root_path
   end
 end
