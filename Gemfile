@@ -17,7 +17,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.2'
 gem "font-awesome-rails"
 gem 'jquery-turbolinks'
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.20'
   gem 'rails_12factor'
 end
 
