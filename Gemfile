@@ -16,6 +16,9 @@ gem 'devise'
 gem 'paperclip', '~> 4.3', '>= 4.3.2'
 gem "font-awesome-rails"
 gem 'jquery-turbolinks'
+gem 'kaminari'
+
+
 group :production do
   gem 'pg', '~> 0.20'
   gem 'rails_12factor'
