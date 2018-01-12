@@ -4,6 +4,7 @@
   <title>MovieDemo</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -35,15 +36,16 @@
 
         <% if user_signed_in? %>
           <li><%= link_to "映画を登録する", new_play_path %></li>
+          <li><%= link_to "お気に入り映画", bookmarks_path %></li>
         <% end -%>
       </ul>
     </div>
   </nav>
 
-
+  <div class="container">
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-
+  </div>
   <div class="container">
     <%= yield %>
   </div>

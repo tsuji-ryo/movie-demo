@@ -14,7 +14,8 @@
  *= require_self
  */
 
-@import url(https://fonts.googleapis.com/css?family=Lato); 
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
@@ -33,17 +34,15 @@
 
 /* General styles */
 
+
 body {
-  background: -webkit-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-  background:    -moz-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-  background:     -ms-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-  background:      -o-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-  background:         linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-  font-family: 'Lato', sans-serif;
+  background: #F5F5F5;
+  
+  font-family: 'Noto Sans Japanese',"游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Sans Japanese',"游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 200;
   text-transform: uppercase;
 }
@@ -56,7 +55,7 @@ p.alert, p.notice {
 /* Navbar/navigation styles */
 
 .navbar {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Sans Japanese',"游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   text-transform: uppercase;
 }
 .navbar-default {
@@ -75,7 +74,7 @@ p.alert, p.notice {
   .navbar-header {
 
     .navbar-brand {
-      color: #A77DC2;
+      color: #02AEDC;
       letter-spacing: 1.4px;
       text-transform: uppercase;
       font-size: 2.3em;
@@ -91,7 +90,7 @@ p.alert, p.notice {
 
   .navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
     background-color: darken(#bdbdbd, 5%);
-    color: #fff;  
+    color: #fff;
   }
 
 }
@@ -110,7 +109,7 @@ p.alert, p.notice {
   border: 1px solid darken(#bdbdbd, 5%);
   padding: 8px 20px;
   border-radius: 0px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Sans Japanese',"游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   &:hover {
     text-decoration: none;
     background-color: darken(#bdbdbd, 5%);
@@ -125,7 +124,7 @@ p.alert, p.notice {
   border: 1px solid #222;
   padding: 8px 20px;
   border-radius: 0px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Sans Japanese',"游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   &:hover {
     text-decoration: none;
     background-color: #333;
@@ -191,13 +190,17 @@ p.alert, p.notice {
 
   .play-director {
     font-size: 1.5em;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     font-style: italic;
     font-weight: lighter;
     span {
       font-size: 0.80em;
     } 
+  }
+  
+  .play-category {
+    margin-top: 30px;
   }
 
   .play-desc {
@@ -332,4 +335,15 @@ p.alert, p.notice {
     margin-top: 0;
   }
 
+}
+
+.bookmark-index h3 {
+  margin: 10px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.links-fix {
+  margin-top: 20px;
+  position: absolute;
 }

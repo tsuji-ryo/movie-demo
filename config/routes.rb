@@ -6,5 +6,6 @@ Rails.application.routes.draw do
     resources :reviews
   end
   root 'plays#index'
+  resources :bookmarks, only: [:index]
 end
 

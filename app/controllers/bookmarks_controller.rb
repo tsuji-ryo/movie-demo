@@ -9,4 +9,10 @@ class BookmarksController < ApplicationController
     end
     redirect_to root_path
   end
+
+  def index
+    @user = current_user
+    @bookmarks = Bookmark.where(user_id: @user.id).all
+  end
+
 end
