@@ -1,0 +1,1 @@
+Paperclip::Attachment.default_options[:url] = 'movie-demo-production.s3.amazonaws.com'
