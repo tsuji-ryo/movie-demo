@@ -17,7 +17,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.2'
 gem "font-awesome-rails"
 gem 'jquery-turbolinks'
 gem 'kaminari'
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk', '< 2.0'
 gem 'fog'
 gem 'dotenv-rails'
 
